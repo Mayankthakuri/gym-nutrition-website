@@ -6,7 +6,7 @@ const products = [
     subtitle: 'Rich Chocolate • 1 Kg',
     description:
       '100% Soy Protein Isolate — the perfect plant-based protein for those who prefer a vegetarian option. Rich in amino acids and easy to digest.',
-    image: '/images/soy-protein.png',
+    image: '/images/soy-protein.svg',
     color: 'from-amber-900 to-amber-800',
     features: [
       { icon: Leaf, label: '100% Plant-Based' },
@@ -21,7 +21,7 @@ const products = [
     subtitle: 'Rich Chocolate • 10 LBS (4.54 Kg)',
     description:
       'High-performance whey protein designed for serious athletes. Packed with protein to fuel muscle recovery and growth after intense workouts.',
-    image: '/images/performance-whey.png',
+    image: '/images/performance-whey.svg',
     color: 'from-red-900 to-red-800',
     features: [
       { icon: Zap, label: 'High Performance' },
