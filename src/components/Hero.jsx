@@ -1,7 +1,7 @@
 import { ArrowRight, Truck, ShieldCheck, RotateCcw, Percent } from 'lucide-react';
 
 const badges = [
-  { icon: Truck, label: 'Free Delivery', sub: 'On Rs. 999+' },
+  { icon: Truck, label: 'Free Delivery', sub: 'All India' },
   { icon: ShieldCheck, label: '100% Authentic', sub: 'Quality assured' },
   { icon: RotateCcw, label: 'Easy Returns', sub: '7-day policy' },
   { icon: Percent, label: 'Best Prices', sub: 'Guaranteed' },
@@ -66,21 +66,21 @@ export default function Hero() {
                 <img src="/images/soy-protein-isolate.png" alt="BIoton Soy Protein" className="w-44 h-44 object-contain drop-shadow-2xl" />
                 <div className="mt-3 text-center">
                   <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">SOY PROTEIN</p>
-                  <p className="text-white text-sm font-bold">Rs. 1,499</p>
+                  <p className="text-white/60 text-xs">Rich Chocolate | 1 Kg</p>
                 </div>
               </div>
               <div className="bg-gradient-to-br from-yellow-900/60 to-yellow-950/60 rounded-3xl p-5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500 translate-y-[-15px]">
                 <img src="/images/whey-protein-gold.png" alt="BIoton Whey Protein" className="w-48 h-48 object-contain drop-shadow-2xl" />
                 <div className="mt-3 text-center">
                   <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">WHEY PROTEIN</p>
-                  <p className="text-white text-sm font-bold">Rs. 3,499</p>
+                  <p className="text-white/60 text-xs">Gold Quality | 4.54 Kg</p>
                 </div>
               </div>
               <div className="bg-gradient-to-br from-red-900/60 to-red-950/60 rounded-3xl p-5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
                 <img src="/images/performance-whey.png" alt="BIoton Performance Whey" className="w-44 h-44 object-contain drop-shadow-2xl" />
                 <div className="mt-3 text-center">
                   <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">PERFORMANCE</p>
-                  <p className="text-white text-sm font-bold">Rs. 3,999</p>
+                  <p className="text-white/60 text-xs">Rich Chocolate | 4.54 Kg</p>
                 </div>
               </div>
             </div>

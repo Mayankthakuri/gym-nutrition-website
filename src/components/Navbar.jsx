@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <>
       <div className="bg-brand-black text-white text-center py-2 text-xs tracking-wide">
-        <p>Free Delivery on Orders Above Rs.999 | Use Code <span className="font-bold text-brand-yellow">BIOTON10</span> for 10% Off</p>
+        <p>Free Delivery on All Orders | Use Code <span className="font-bold text-brand-yellow">BIOTON10</span> for 10% Off</p>
       </div>
 
       <nav className={`sticky top-0 z-50 transition-all duration-300 bg-white ${scrolled ? 'shadow-md' : ''}`}>

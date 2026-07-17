@@ -5,9 +5,6 @@ const products = [
     name: 'BIoton Soy Protein Isolate',
     flavor: 'Rich Chocolate',
     weight: '1 Kg',
-    price: '1,499',
-    oldPrice: '1,999',
-    discount: '25%',
     image: '/images/soy-protein-isolate.png',
     rating: 4.5,
     reviews: 128,
@@ -17,9 +14,6 @@ const products = [
     name: 'BIoton 100% Whey Protein',
     flavor: 'Rich Chocolate | Gold Quality',
     weight: '4.54 Kg (10 LBS)',
-    price: '3,499',
-    oldPrice: '4,999',
-    discount: '30%',
     image: '/images/whey-protein-gold.png',
     rating: 4.8,
     reviews: 342,
@@ -29,9 +23,6 @@ const products = [
     name: 'BIoton Performance Whey',
     flavor: 'Rich Chocolate',
     weight: '4.54 Kg (10 LBS)',
-    price: '3,999',
-    oldPrice: '5,499',
-    discount: '27%',
     image: '/images/performance-whey.png',
     rating: 4.7,
     reviews: 256,
@@ -54,7 +45,6 @@ export default function Products() {
             <div key={i} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
               <div className="relative bg-gray-50 p-6 flex items-center justify-center min-h-[280px]">
                 <span className="absolute top-3 left-3 bg-brand-orange text-white text-[10px] font-bold px-2.5 py-1 rounded-full">{product.badge}</span>
-                <span className="absolute top-3 right-3 bg-green-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">{product.discount} OFF</span>
                 <img src={product.image} alt={product.name} className="w-48 h-48 object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-5">
@@ -66,13 +56,11 @@ export default function Products() {
                 </div>
                 <h3 className="text-sm font-bold text-gray-900 mb-1">{product.name}</h3>
                 <p className="text-xs text-gray-400 mb-3">{product.flavor} | {product.weight}</p>
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-xl font-extrabold text-gray-900">Rs. {product.price}</span>
-                  <span className="text-xs text-gray-400 line-through">Rs. {product.oldPrice}</span>
+                <div className="mt-auto">
+                  <button className="w-full flex items-center justify-center gap-2 bg-brand-black text-white py-3 rounded-full text-xs font-semibold hover:bg-brand-orange transition-all">
+                    <ShoppingCart size={14} />Enquire Now
+                  </button>
                 </div>
-                <button className="w-full flex items-center justify-center gap-2 bg-brand-black text-white py-3 rounded-full text-xs font-semibold hover:bg-brand-orange transition-all">
-                  <ShoppingCart size={14} />Add to Cart
-                </button>
               </div>
             </div>
           ))}
