@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --color-brand-yellow: #E8C840;
+  --color-brand-yellow-light: #F5E6A0;
+  --color-brand-yellow-dark: #C4A620;
+  --color-brand-orange: #D4782F;
+  --color-brand-orange-light: #E8A060;
+  --color-brand-orange-dark: #B85E1A;
+  --color-brand-black: #1A1A1A;
+
+  --color-primary-50: #FFF8E8;
+  --color-primary-100: #FFEFC0;
+  --color-primary-200: #FFE08A;
+  --color-primary-300: #FFD054;
+  --color-primary-400: #F5C020;
+  --color-primary-500: #E8C840;
+  --color-primary-600: #D4782F;
+  --color-primary-700: #B85E1A;
+  --color-primary-800: #8C4510;
+  --color-primary-900: #5C2E08;
+
+  --color-teal-50: #F0FDF4;
+  --color-teal-100: #DCFCE7;
+  --color-teal-200: #BBF7D0;
+  --color-teal-300: #86EFAC;
+  --color-teal-400: #4ADE80;
+  --color-teal-500: #22C55E;
+  --color-teal-600: #16A34A;
+  --color-teal-700: #15803D;
+  --color-teal-800: #166534;
+  --color-teal-900: #14532D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
