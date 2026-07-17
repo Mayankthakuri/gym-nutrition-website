@@ -2,12 +2,12 @@ import { Check } from 'lucide-react';
 
 export default function About() {
   const highlights = [
-    'Science-based, evidence-driven nutrition counseling',
-    'Customized diet plans for gym-goers and athletes',
-    'Weight loss, muscle gain, and body recomposition support',
-    'Diet management for diabetes, thyroid, PCOD, and more',
-    'Premium supplements: Clean & Pure GYM ID Whey Protein',
-    'Flexible online and in-person consultation options',
+    'Premium quality supplements — no preservatives, no additives',
+    'Rich Chocolate flavour for great taste without sugar',
+    'Soy Protein Isolate for plant-based nutrition',
+    'Performance Whey for serious athletes',
+    'Science-based, evidence-driven product formulations',
+    'Trusted by fitness enthusiasts across Ahmedabad',
   ];
 
   return (
@@ -15,10 +15,10 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-3">
-            About GYM ID Nutrition
+            About BIoton
           </h2>
           <p className="text-lg text-brand-yellow-dark font-medium mb-6">
-            GYM ID ન્યૂટ્રીશન વિશે
+            BIoton વિશે
           </p>
           <div className="w-16 h-1 bg-brand-orange mx-auto rounded-full" />
         </div>
@@ -27,19 +27,17 @@ export default function About() {
           {/* Content */}
           <div>
             <p className="text-gray-600 leading-relaxed mb-6">
-              At GYM ID Nutrition, we believe that every individual is unique and
-              deserves a nutrition plan tailored to their specific goals and
-              lifestyle. Our approach combines the latest in nutritional science
-              with practical, real-world guidance that fits into your daily
-              routine.
+              BIoton is your trusted brand for clean and pure supplements.
+              We believe that what you put into your body matters — that's why
+              every product is formulated with the highest quality ingredients,
+              free from preservatives, artificial flavours, and unnecessary additives.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              Whether you are a dedicated gym-goer looking to optimize your
-              performance, someone on a weight loss journey, or managing a
-              lifestyle condition like diabetes, thyroid, or PCOD — we design
-              plans that are sustainable, enjoyable, and effective. We also
-              develop our own line of premium supplements, including the GYM ID
-              Gold Series 100% Whey Protein.
+              From our Rich Chocolate Soy Protein Isolate for plant-based
+              nutrition to our Performance Whey for serious athletes, BIoton
+              delivers premium supplements that fuel your fitness goals. Whether
+              you're looking to lose weight, build muscle, or simply live
+              healthier — we've got the right product for you.
             </p>
 
             <ul className="space-y-4">
@@ -54,7 +52,7 @@ export default function About() {
             </ul>
 
             <p className="mt-8 text-sm text-gray-400 italic">
-              Conveniently located in Navrangpura, Ahmedabad.
+              Distributed from Navrangpura, Ahmedabad, Gujarat.
             </p>
           </div>
 
@@ -63,20 +61,20 @@ export default function About() {
             <div className="bg-gradient-to-br from-brand-yellow/10 to-brand-orange/5 rounded-3xl p-8 lg:p-12 border border-brand-yellow/20">
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white rounded-2xl p-6 shadow-sm text-center">
-                  <div className="text-3xl font-bold text-brand-orange mb-1">500+</div>
-                  <div className="text-sm text-gray-500">Clients Served</div>
+                  <div className="text-3xl font-bold text-brand-orange mb-1">100%</div>
+                  <div className="text-sm text-gray-500">Pure Ingredients</div>
                 </div>
                 <div className="bg-white rounded-2xl p-6 shadow-sm text-center">
-                  <div className="text-3xl font-bold text-brand-yellow-dark mb-1">100%</div>
-                  <div className="text-sm text-gray-500">Customized Plans</div>
+                  <div className="text-3xl font-bold text-brand-yellow-dark mb-1">0g</div>
+                  <div className="text-sm text-gray-500">Added Sugar</div>
                 </div>
                 <div className="bg-white rounded-2xl p-6 shadow-sm text-center">
-                  <div className="text-3xl font-bold text-brand-orange mb-1">24/7</div>
-                  <div className="text-sm text-gray-500">Online Support</div>
+                  <div className="text-3xl font-bold text-brand-orange mb-1">2</div>
+                  <div className="text-sm text-gray-500">Product Lines</div>
                 </div>
                 <div className="bg-white rounded-2xl p-6 shadow-sm text-center">
                   <div className="text-3xl font-bold text-brand-yellow-dark mb-1">5+</div>
-                  <div className="text-sm text-gray-500">Years Experience</div>
+                  <div className="text-sm text-gray-500">Years Trusted</div>
                 </div>
               </div>
             </div>

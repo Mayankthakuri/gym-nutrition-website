@@ -34,13 +34,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2">
-            <img src="/logo.svg" alt="GYM ID Logo" className="h-10 w-10 lg:h-12 lg:w-12" />
+            <img src="/logo.svg" alt="BIoton Logo" className="h-10 w-10 lg:h-12 lg:w-12" />
             <div className="flex flex-col leading-tight">
               <span className="text-lg lg:text-xl font-bold text-brand-orange tracking-tight">
-                GYM ID
+                BIoton
               </span>
               <span className="text-[10px] lg:text-xs text-gray-500 -mt-0.5">
-                જિમ ઈડ ન્યૂટ્રીશન – Nutritionist
+                Clean & Pure Supplements
               </span>
             </div>
           </a>

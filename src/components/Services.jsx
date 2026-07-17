@@ -12,25 +12,25 @@ const services = [
     icon: Dumbbell,
     title: 'Gym & Sports Nutrition',
     description:
-      'Performance-focused diet plans for athletes and fitness enthusiasts to fuel workouts and accelerate recovery.',
+      'Performance-focused supplement stacks and diet plans for athletes and fitness enthusiasts to fuel workouts and accelerate recovery.',
   },
   {
     icon: TrendingDown,
     title: 'Weight Loss Programs',
     description:
-      'Sustainable, calorie-controlled meal plans designed for healthy and lasting weight management.',
+      'Sustainable, calorie-controlled meal plans paired with the right supplements designed for healthy and lasting weight management.',
   },
   {
     icon: TrendingUp,
     title: 'Muscle Gain & Bodybuilding',
     description:
-      'High-protein nutrition strategies to support muscle hypertrophy, strength, and body recomposition.',
+      'High-protein nutrition strategies with BIoton Performance Whey to support muscle hypertrophy, strength, and body recomposition.',
   },
   {
     icon: Heart,
     title: 'General Health & Wellness',
     description:
-      'Balanced nutrition plans for everyday wellness, energy optimization, and preventive health.',
+      'Balanced nutrition plans and plant-based protein options like BIoton Soy Protein Isolate for everyday wellness.',
   },
   {
     icon: Stethoscope,
@@ -59,8 +59,8 @@ export default function Services() {
           </p>
           <div className="w-16 h-1 bg-brand-orange mx-auto rounded-full mb-6" />
           <p className="text-gray-500 max-w-2xl mx-auto">
-            Comprehensive nutrition services tailored to your unique goals,
-            whether you're training for competition or simply living healthier.
+            Comprehensive nutrition services paired with BIoton premium
+            supplements — tailored to your unique fitness goals.
           </p>
         </div>
 

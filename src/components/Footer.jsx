@@ -5,23 +5,21 @@ export default function Footer() {
     <footer className="bg-brand-black text-gray-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="flex items-center gap-2 mb-3">
-              <img src="/logo.svg" alt="GYM ID Logo" className="h-10 w-10" />
+              <img src="/logo.svg" alt="BIoton Logo" className="h-10 w-10" />
               <div>
-                <h3 className="text-xl font-bold text-white">GYM ID</h3>
-                <p className="text-xs text-gray-500">જિમ ઈડ ન્યૂટ્રીશન</p>
+                <h3 className="text-xl font-bold text-white">BIoton</h3>
+                <p className="text-xs text-gray-500">Clean & Pure Supplements</p>
               </div>
             </div>
             <p className="text-sm leading-relaxed max-w-md">
-              Personalized nutrition plans and premium supplements for fitness
-              enthusiasts, athletes, and anyone committed to living healthier.
-              Science-based guidance from a trusted nutritionist in Ahmedabad.
+              Premium supplements formulated with the purest ingredients.
+              From Soy Protein Isolate to Performance Whey — BIoton delivers
+              clean nutrition for every fitness goal.
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2.5 text-sm">
@@ -34,7 +32,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h4 className="text-white font-semibold mb-4">Contact</h4>
             <ul className="space-y-3 text-sm">
@@ -55,11 +52,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
-          <p>&copy; 2026 GYM ID Nutrition. All rights reserved.</p>
+          <p>&copy; 2026 BIoton. All rights reserved.</p>
           <p className="text-gray-600">
-            Designed with care for a healthier community.
+            Clean & Pure Supplements for a Healthier You.
           </p>
         </div>
       </div>

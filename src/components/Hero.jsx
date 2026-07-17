@@ -34,19 +34,18 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Customized diet plans designed for gym-goers, athletes, and anyone
-          seeking a healthier lifestyle. Whether you want to lose weight, build
-          muscle, or manage a health condition — we create plans that work for
-          <em> you</em>.
+          Premium supplements and customized diet plans for gym-goers, athletes,
+          and anyone seeking a healthier lifestyle. Whether you want to lose weight,
+          build muscle, or manage a health condition — BIoton has you covered.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#contact"
+            href="#products"
             className="inline-flex items-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-brand-orange-dark transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
-            Book Consultation
+            View Products
             <ArrowRight size={18} />
           </a>
           <a
@@ -64,15 +63,15 @@ export default function Hero() {
         <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm text-gray-400">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-brand-yellow rounded-full" />
-            Science-Based Plans
+            100% Pure Ingredients
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-brand-orange rounded-full" />
-            Expert Nutritionist
+            No Preservatives
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-brand-yellow rounded-full" />
-            Online & In-Person
+            Quality Assured
           </div>
         </div>
       </div>

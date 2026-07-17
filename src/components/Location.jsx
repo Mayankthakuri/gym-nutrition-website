@@ -22,7 +22,6 @@ export default function Location() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
-          {/* Info Card */}
           <div className="space-y-6">
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
               <div className="flex items-start gap-4 mb-6">
@@ -65,7 +64,7 @@ export default function Location() {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Working Hours</h3>
                   <p className="text-gray-500 text-sm">
-                    Mon – Sat: 9:00 AM – 8:00 PM
+                    Mon - Sat: 9:00 AM - 8:00 PM
                     <br />
                     Sunday: By Appointment
                   </p>
@@ -95,7 +94,6 @@ export default function Location() {
             </div>
           </div>
 
-          {/* Map */}
           <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-gray-100 min-h-[400px]">
             <iframe
               src={embedUrl}
@@ -105,7 +103,7 @@ export default function Location() {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="GYM ID Nutrition Location"
+              title="BIoton Location"
             />
           </div>
         </div>

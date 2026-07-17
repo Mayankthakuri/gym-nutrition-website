@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="48" height="48">
-  <circle cx="100" cy="80" r="70" fill="none" stroke="#D4782F" stroke-width="3"/>
-  <path d="M60 80 L95 40 L95 120 L60 80Z" fill="#E8C840"/>
-  <path d="M140 80 L105 40 L105 120 L140 80Z" fill="#D4782F"/>
-  <path d="M55 55 Q100 20 145 55" fill="none" stroke="#AAA" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="100" r="90" fill="#1A1A1A"/>
+  <circle cx="100" cy="100" r="80" fill="#2A2A2A"/>
+  <text x="100" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="80" fill="#D4782F">B</text>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#E8C840" stroke-width="3"/>
 </svg>
