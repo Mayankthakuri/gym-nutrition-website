@@ -60,26 +60,26 @@ export default function Hero() {
           </div>
 
           <div className="hidden lg:flex justify-center items-center relative">
-            <div className="absolute w-[500px] h-[500px] bg-brand-orange/15 rounded-full blur-[100px]" />
-            <div className="relative flex gap-6 items-end">
+            <div className="absolute w-[600px] h-[600px] bg-brand-orange/15 rounded-full blur-[120px]" />
+            <div className="relative flex gap-8 items-end">
               <div className="rounded-3xl p-4 hover:scale-105 transition-transform duration-500">
-                <img src="/images/soy-protein-isolate.png" alt="BIoton Soy Protein" className="w-[200px] h-[200px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)]" />
+                <img src="/images/soy-protein-isolate.png" alt="BIoton Soy Protein" className="w-[260px] h-[260px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
                 <div className="mt-4 text-center">
-                  <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">SOY PROTEIN</p>
+                  <p className="text-brand-yellow text-xs font-semibold tracking-wider">SOY PROTEIN</p>
                   <p className="text-white/50 text-xs">Rich Chocolate | 1 Kg</p>
                 </div>
               </div>
-              <div className="rounded-3xl p-4 hover:scale-105 transition-transform duration-500 translate-y-[-20px]">
-                <img src="/images/whey-protein-gold.png" alt="BIoton Whey Protein" className="w-[240px] h-[240px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+              <div className="rounded-3xl p-4 hover:scale-105 transition-transform duration-500 translate-y-[-25px]">
+                <img src="/images/whey-protein-gold.png" alt="BIoton Whey Protein" className="w-[320px] h-[320px] object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)]" />
                 <div className="mt-4 text-center">
-                  <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">WHEY PROTEIN</p>
+                  <p className="text-brand-yellow text-xs font-semibold tracking-wider">WHEY PROTEIN</p>
                   <p className="text-white/50 text-xs">Gold Quality | 4.54 Kg</p>
                 </div>
               </div>
               <div className="rounded-3xl p-4 hover:scale-105 transition-transform duration-500">
-                <img src="/images/performance-whey.png" alt="BIoton Performance Whey" className="w-[200px] h-[200px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)]" />
+                <img src="/images/performance-whey.png" alt="BIoton Performance Whey" className="w-[260px] h-[260px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
                 <div className="mt-4 text-center">
-                  <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">PERFORMANCE</p>
+                  <p className="text-brand-yellow text-xs font-semibold tracking-wider">PERFORMANCE</p>
                   <p className="text-white/50 text-xs">Rich Chocolate | 4.54 Kg</p>
                 </div>
               </div>
