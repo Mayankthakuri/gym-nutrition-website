@@ -1,80 +1,91 @@
-import { Check } from 'lucide-react';
+import { Check, Award, Leaf, FlaskConical, Shield } from 'lucide-react';
+
+const features = [
+  { icon: Leaf, title: '100% Pure', desc: 'No preservatives or additives' },
+  { icon: FlaskConical, title: 'Lab Tested', desc: 'Third-party quality verified' },
+  { icon: Shield, title: 'GMP Certified', desc: 'Manufactured to highest standards' },
+  { icon: Award, title: 'Trusted Brand', desc: 'Loved by 50,000+ customers' },
+];
 
 export default function About() {
-  const highlights = [
-    'Premium quality supplements — no preservatives, no additives',
-    'Rich Chocolate flavour for great taste without sugar',
-    'Soy Protein Isolate for plant-based nutrition',
-    'Performance Whey for serious athletes',
-    'Science-based, evidence-driven product formulations',
-    'Trusted by fitness enthusiasts across Ahmedabad',
-  ];
-
   return (
-    <section id="about" className="py-20 lg:py-28 bg-white">
+    <section id="about" className="py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight mb-3">
-            About BIoton
-          </h2>
-          <p className="text-lg text-brand-yellow-dark font-medium mb-6">
-            BIoton વિશે
-          </p>
-          <div className="w-16 h-1 bg-brand-orange mx-auto rounded-full" />
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Content */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* Left */}
           <div>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              BIoton is your trusted brand for clean and pure supplements.
-              We believe that what you put into your body matters — that's why
-              every product is formulated with the highest quality ingredients,
-              free from preservatives, artificial flavours, and unnecessary additives.
+            <p className="text-brand-orange text-sm font-semibold tracking-widest uppercase mb-2">About BIoton</p>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight mb-6">
+              Clean Nutrition for
+              <br />
+              <span className="text-brand-orange">Serious Athletes</span>
+            </h2>
+            <p className="text-gray-500 leading-relaxed mb-6">
+              BIoton was founded with a simple mission: deliver premium quality
+              supplements without the junk. Every product we create is formulated
+              with the purest ingredients, rigorously tested, and designed to
+              help you reach your fitness goals.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-8">
+            <p className="text-gray-500 leading-relaxed mb-8">
               From our Rich Chocolate Soy Protein Isolate for plant-based
-              nutrition to our Performance Whey for serious athletes, BIoton
-              delivers premium supplements that fuel your fitness goals. Whether
-              you're looking to lose weight, build muscle, or simply live
-              healthier — we've got the right product for you.
+              nutrition to our Performance Whey for serious athletes, we ensure
+              every scoop delivers exactly what your body needs - nothing more,
+              nothing less.
             </p>
 
-            <ul className="space-y-4">
-              {highlights.map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="mt-1 flex-shrink-0 w-5 h-5 bg-brand-yellow/20 text-brand-orange rounded-full flex items-center justify-center">
-                    <Check size={12} strokeWidth={3} />
-                  </span>
-                  <span className="text-gray-600">{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <p className="mt-8 text-sm text-gray-400 italic">
-              Distributed from Navrangpura, Ahmedabad, Gujarat.
-            </p>
+            <div className="grid grid-cols-2 gap-4">
+              {features.map((f, i) => {
+                const Icon = f.icon;
+                return (
+                  <div key={i} className="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors">
+                    <div className="w-10 h-10 bg-brand-yellow/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Icon size={18} className="text-brand-orange" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold text-gray-900">{f.title}</div>
+                      <div className="text-xs text-gray-500">{f.desc}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
 
-          {/* Visual Card */}
+          {/* Right - Stats */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-brand-yellow/10 to-brand-orange/5 rounded-3xl p-8 lg:p-12 border border-brand-yellow/20">
+            <div className="bg-gradient-to-br from-brand-black to-gray-900 rounded-3xl p-8 lg:p-12">
               <div className="grid grid-cols-2 gap-6">
-                <div className="bg-white rounded-2xl p-6 shadow-sm text-center">
-                  <div className="text-3xl font-bold text-brand-orange mb-1">100%</div>
-                  <div className="text-sm text-gray-500">Pure Ingredients</div>
+                <div className="text-center">
+                  <div className="text-4xl font-extrabold text-brand-yellow mb-1">50K+</div>
+                  <div className="text-sm text-gray-400">Happy Customers</div>
                 </div>
-                <div className="bg-white rounded-2xl p-6 shadow-sm text-center">
-                  <div className="text-3xl font-bold text-brand-yellow-dark mb-1">0g</div>
-                  <div className="text-sm text-gray-500">Added Sugar</div>
+                <div className="text-center">
+                  <div className="text-4xl font-extrabold text-brand-orange mb-1">100%</div>
+                  <div className="text-sm text-gray-400">Pure Ingredients</div>
                 </div>
-                <div className="bg-white rounded-2xl p-6 shadow-sm text-center">
-                  <div className="text-3xl font-bold text-brand-orange mb-1">2</div>
-                  <div className="text-sm text-gray-500">Product Lines</div>
+                <div className="text-center">
+                  <div className="text-4xl font-extrabold text-brand-yellow mb-1">0g</div>
+                  <div className="text-sm text-gray-400">Added Sugar</div>
                 </div>
-                <div className="bg-white rounded-2xl p-6 shadow-sm text-center">
-                  <div className="text-3xl font-bold text-brand-yellow-dark mb-1">5+</div>
-                  <div className="text-sm text-gray-500">Years Trusted</div>
+                <div className="text-center">
+                  <div className="text-4xl font-extrabold text-brand-orange mb-1">4.7</div>
+                  <div className="text-sm text-gray-400">Average Rating</div>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-8 border-t border-white/10">
+                <div className="flex items-center gap-4">
+                  <div className="flex -space-x-3">
+                    {[1,2,3,4].map(n => (
+                      <div key={n} className="w-10 h-10 rounded-full bg-gradient-to-br from-brand-yellow to-brand-orange border-2 border-brand-black flex items-center justify-center text-xs font-bold text-white">
+                        {String.fromCharCode(64 + n)}
+                      </div>
+                    ))}
+                  </div>
+                  <div>
+                    <p className="text-white text-sm font-semibold">Join 50,000+ athletes</p>
+                    <p className="text-gray-400 text-xs">who trust BIoton for their nutrition</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,7 +1,8 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
+import Collections from './components/Collections';
 import Products from './components/Products';
+import About from './components/About';
 import Services from './components/Services';
 import Location from './components/Location';
 import Contact from './components/Contact';
@@ -12,8 +13,9 @@ function App() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
-      <About />
+      <Collections />
       <Products />
+      <About />
       <Services />
       <Location />
       <Contact />

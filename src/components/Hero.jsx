@@ -1,77 +1,85 @@
-import { ArrowRight, MapPin } from 'lucide-react';
+import { ArrowRight, Truck, ShieldCheck, RotateCcw, Percent } from 'lucide-react';
+
+const badges = [
+  { icon: Truck, label: 'Free Delivery', sub: 'On Rs. 999+' },
+  { icon: ShieldCheck, label: '100% Authentic', sub: 'Quality assured' },
+  { icon: RotateCcw, label: 'Easy Returns', sub: '7-day policy' },
+  { icon: Percent, label: 'Best Prices', sub: 'Guaranteed' },
+];
 
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-brand-yellow/10 via-white to-brand-orange/5 overflow-hidden"
-    >
-      {/* Background Decorations */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-brand-yellow/20 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-orange/15 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-yellow/10 rounded-full blur-3xl" />
-      </div>
+    <section id="home" className="relative bg-brand-black overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-black via-gray-900 to-brand-dark" />
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-orange/10 rounded-full blur-[120px]" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-yellow/10 rounded-full blur-[100px]" />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-16">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-brand-yellow/20 text-brand-orange-dark px-4 py-2 rounded-full text-sm font-medium mb-8">
-          <MapPin size={14} />
-          Navrangpura, Ahmedabad
-        </div>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-8 items-center min-h-[600px] lg:min-h-[700px] py-12">
+          <div className="text-white">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-6 border border-white/10">
+              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+              New Launches Available
+            </div>
 
-        {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-gray-900 leading-tight tracking-tight mb-4">
-          Personalized Nutrition
-          <br />
-          <span className="text-brand-orange">for Your Fitness Goals</span>
-        </h1>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.05] mb-6">
+              Fuel Your Body
+              <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-orange">
+                With Pure Nutrition
+              </span>
+            </h1>
 
-        {/* Gujarati Subtitle */}
-        <p className="text-lg sm:text-xl text-brand-yellow-dark font-medium mb-6">
-          તમારા ફિટનેસ લક્ષ્યો માટે વ્યક્તિગત પોષણ
-        </p>
+            <p className="text-gray-400 text-base sm:text-lg max-w-md mb-8 leading-relaxed">
+              Premium supplements with zero compromise. No preservatives, no
+              artificial flavours - just clean, pure ingredients to power your
+              fitness journey.
+            </p>
 
-        {/* Description */}
-        <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Premium supplements and customized diet plans for gym-goers, athletes,
-          and anyone seeking a healthier lifestyle. Whether you want to lose weight,
-          build muscle, or manage a health condition — BIoton has you covered.
-        </p>
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <a href="#products" className="inline-flex items-center justify-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-brand-orange-dark transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                Shop Now
+                <ArrowRight size={16} />
+              </a>
+              <a href="#collections" className="inline-flex items-center justify-center gap-2 bg-white/10 text-white px-8 py-4 rounded-full text-sm font-semibold border border-white/20 hover:bg-white/20 transition-all">
+                View Collections
+              </a>
+            </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="#products"
-            className="inline-flex items-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-brand-orange-dark transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-          >
-            View Products
-            <ArrowRight size={18} />
-          </a>
-          <a
-            href="https://www.google.com/maps/search/Anison+2HQ7+5FW+Swastik+Society+Cross+Rd+Swastik+Society+Navrangpura+Ahmedabad+Gujarat+380009"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white text-gray-700 px-8 py-4 rounded-full text-base font-semibold border border-gray-200 hover:border-brand-yellow hover:text-brand-orange transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5"
-          >
-            <MapPin size={18} />
-            Get Directions
-          </a>
-        </div>
-
-        {/* Trust Indicators */}
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-sm text-gray-400">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-brand-yellow rounded-full" />
-            100% Pure Ingredients
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              {badges.map((badge, i) => {
+                const Icon = badge.icon;
+                return (
+                  <div key={i} className="flex items-center gap-3 bg-white/5 rounded-xl px-3 py-3 border border-white/5">
+                    <Icon size={18} className="text-brand-yellow flex-shrink-0" />
+                    <div>
+                      <div className="text-xs font-semibold text-white">{badge.label}</div>
+                      <div className="text-[10px] text-gray-500">{badge.sub}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-brand-orange rounded-full" />
-            No Preservatives
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-brand-yellow rounded-full" />
-            Quality Assured
+
+          <div className="hidden lg:flex justify-center items-center relative">
+            <div className="absolute w-[400px] h-[400px] bg-brand-orange/20 rounded-full blur-[80px]" />
+            <div className="relative flex gap-6 items-end">
+              <div className="bg-gradient-to-br from-amber-900/80 to-amber-950/80 rounded-3xl p-6 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
+                <img src="/images/soy-protein.svg" alt="BIoton Soy Protein Isolate" className="w-48 h-auto drop-shadow-2xl" />
+                <div className="mt-4 text-center">
+                  <p className="text-brand-yellow text-xs font-semibold">SOY PROTEIN</p>
+                  <p className="text-white text-sm font-bold">Rs. 1,499</p>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-red-900/80 to-red-950/80 rounded-3xl p-6 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500 translate-y-[-20px]">
+                <img src="/images/performance-whey.svg" alt="BIoton Performance Whey" className="w-52 h-auto drop-shadow-2xl" />
+                <div className="mt-4 text-center">
+                  <p className="text-brand-yellow text-xs font-semibold">PERFORMANCE WHEY</p>
+                  <p className="text-white text-sm font-bold">Rs. 3,999</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
