@@ -8,7 +8,7 @@ const products = [
     price: '1,499',
     oldPrice: '1,999',
     discount: '25%',
-    image: '/images/soy-protein.svg',
+    image: '/images/soy-protein-isolate.jpg',
     bg: 'from-amber-900/20 to-amber-800/10',
     rating: 4.5,
     reviews: 128,
@@ -21,7 +21,7 @@ const products = [
     price: '3,499',
     oldPrice: '4,999',
     discount: '30%',
-    image: '/images/whey-protein-gold.svg',
+    image: '/images/whey-protein-gold.jpg',
     bg: 'from-yellow-900/20 to-yellow-800/10',
     rating: 4.8,
     reviews: 342,
@@ -34,7 +34,7 @@ const products = [
     price: '3,999',
     oldPrice: '5,499',
     discount: '27%',
-    image: '/images/performance-whey.svg',
+    image: '/images/performance-whey.jpg',
     bg: 'from-red-900/20 to-red-800/10',
     rating: 4.7,
     reviews: 256,
@@ -69,7 +69,7 @@ export default function Products() {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-44 h-auto drop-shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                  className="w-48 h-48 object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
 

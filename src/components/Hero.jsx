@@ -66,21 +66,21 @@ export default function Hero() {
             <div className="absolute w-[400px] h-[400px] bg-brand-orange/20 rounded-full blur-[80px]" />
             <div className="relative flex gap-5 items-end">
               <div className="bg-gradient-to-br from-amber-900/60 to-amber-950/60 rounded-3xl p-5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
-                <img src="/images/soy-protein.svg" alt="BIoton Soy Protein" className="w-40 h-auto drop-shadow-2xl" />
+                <img src="/images/soy-protein-isolate.jpg" alt="BIoton Soy Protein" className="w-44 h-44 object-contain drop-shadow-2xl" />
                 <div className="mt-3 text-center">
                   <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">SOY PROTEIN</p>
                   <p className="text-white text-sm font-bold">Rs. 1,499</p>
                 </div>
               </div>
               <div className="bg-gradient-to-br from-yellow-900/60 to-yellow-950/60 rounded-3xl p-5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500 translate-y-[-15px]">
-                <img src="/images/whey-protein-gold.svg" alt="BIoton Whey Protein" className="w-44 h-auto drop-shadow-2xl" />
+                <img src="/images/whey-protein-gold.jpg" alt="BIoton Whey Protein" className="w-48 h-48 object-contain drop-shadow-2xl" />
                 <div className="mt-3 text-center">
                   <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">WHEY PROTEIN</p>
                   <p className="text-white text-sm font-bold">Rs. 3,499</p>
                 </div>
               </div>
               <div className="bg-gradient-to-br from-red-900/60 to-red-950/60 rounded-3xl p-5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
-                <img src="/images/performance-whey.svg" alt="BIoton Performance Whey" className="w-40 h-auto drop-shadow-2xl" />
+                <img src="/images/performance-whey.jpg" alt="BIoton Performance Whey" className="w-44 h-44 object-contain drop-shadow-2xl" />
                 <div className="mt-3 text-center">
                   <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">PERFORMANCE</p>
                   <p className="text-white text-sm font-bold">Rs. 3,999</p>
