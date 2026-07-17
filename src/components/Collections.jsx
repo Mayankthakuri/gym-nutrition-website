@@ -4,7 +4,7 @@ const collections = [
   {
     title: 'Soy Protein',
     description: 'Plant-based isolate for vegetarians',
-    image: '/images/soy-protein-isolate.jpg',
+    image: '/images/soy-protein-isolate.png',
     bg: 'from-amber-900 to-amber-950',
     link: '#products',
     tag: 'Veg',
@@ -12,7 +12,7 @@ const collections = [
   {
     title: 'Whey Protein',
     description: 'Gold quality with digestive enzymes',
-    image: '/images/whey-protein-gold.jpg',
+    image: '/images/whey-protein-gold.png',
     bg: 'from-yellow-900 to-yellow-950',
     link: '#products',
     tag: 'Best Seller',
@@ -20,10 +20,18 @@ const collections = [
   {
     title: 'Performance Whey',
     description: 'Premium whey for serious athletes',
-    image: '/images/performance-whey.jpg',
+    image: '/images/performance-whey.png',
     bg: 'from-red-900 to-red-950',
     link: '#products',
     tag: 'Premium',
+  },
+  {
+    title: 'Nutrition Profile',
+    description: 'Lab-tested purity with full amino acid disclosure',
+    image: '/images/whey-protein-gold-back.png',
+    bg: 'from-amber-900 to-slate-950',
+    link: '#products',
+    tag: 'Certified',
   },
 ];
 
@@ -43,7 +51,7 @@ export default function Collections() {
           </a>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {collections.map((col, i) => (
             <a
               key={i}

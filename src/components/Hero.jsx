@@ -62,14 +62,14 @@ export default function Hero() {
             <div className="relative flex justify-center items-center h-full">
               {/* Secondary images positioned behind and to the sides */}
               <div className="absolute z-10 left-[-80px] top-1/2 -translate-y-1/2 hover:scale-105 transition-transform duration-500 hover:z-30">
-                <img src="/images/soy-protein-isolate.jpg" alt="BIoton Soy Protein" className="w-[280px] h-[280px] object-contain drop-shadow-xl opacity-90" />
+                <img src="/images/soy-protein-isolate.png" alt="BIoton Soy Protein" className="w-[280px] h-[280px] object-contain drop-shadow-xl opacity-90" />
               </div>
               <div className="absolute z-10 right-[-80px] top-1/2 -translate-y-1/2 hover:scale-105 transition-transform duration-500 hover:z-30">
-                <img src="/images/performance-whey.jpg" alt="BIoton Performance Whey" className="w-[280px] h-[280px] object-contain drop-shadow-xl opacity-90" />
+                <img src="/images/performance-whey.png" alt="BIoton Performance Whey" className="w-[280px] h-[280px] object-contain drop-shadow-xl opacity-90" />
               </div>
               {/* Main big image overlapping */}
               <div className="relative z-20 hover:scale-105 transition-transform duration-500">
-                <img src="/images/whey-protein-gold.jpg" alt="BIoton Whey Protein" className="w-[400px] h-[400px] object-contain drop-shadow-2xl" />
+                <img src="/images/whey-protein-gold.png" alt="BIoton Whey Protein" className="w-[400px] h-[400px] object-contain drop-shadow-2xl" />
               </div>
             </div>
           </div>

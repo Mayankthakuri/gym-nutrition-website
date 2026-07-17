@@ -8,7 +8,7 @@ const products = [
     price: '1,499',
     oldPrice: '1,999',
     discount: '25%',
-    image: '/images/soy-protein-isolate.jpg',
+    image: '/images/soy-protein-isolate.png',
     rating: 4.5,
     reviews: 128,
     badge: 'Plant-Based',
@@ -20,7 +20,7 @@ const products = [
     price: '3,499',
     oldPrice: '4,999',
     discount: '30%',
-    image: '/images/whey-protein-gold.jpg',
+    image: '/images/whey-protein-gold.png',
     rating: 4.8,
     reviews: 342,
     badge: 'Best Seller',
@@ -32,10 +32,22 @@ const products = [
     price: '3,999',
     oldPrice: '5,499',
     discount: '27%',
-    image: '/images/performance-whey.jpg',
+    image: '/images/performance-whey.png',
     rating: 4.7,
     reviews: 256,
     badge: 'Premium',
+  },
+  {
+    name: 'BIoton Whey Protein — Nutrition Info',
+    flavor: 'Rich Chocolate | Gold Quality',
+    weight: '4.54 Kg (10 LBS)',
+    price: '3,499',
+    oldPrice: '4,999',
+    discount: '30%',
+    image: '/images/whey-protein-gold-back.png',
+    rating: 4.9,
+    reviews: 412,
+    badge: 'Lab Tested',
   },
 ];
 
@@ -52,7 +64,7 @@ export default function Products() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {products.map((product, i) => (
             <div key={i} className="group flex flex-col bg-white rounded-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300 relative">
               <div className="absolute top-3 left-3 z-10">

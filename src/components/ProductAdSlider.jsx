@@ -26,7 +26,7 @@ const slides = [
     discount: '30% OFF',
     rating: 4.8,
     reviews: 342,
-    image: '/images/whey-protein-gold.jpg',
+    image: '/images/whey-protein-gold.png',
     bgGradient: 'from-slate-950 via-slate-900 to-indigo-950',
     accentColor: 'text-yellow-400',
     borderColor: 'border-yellow-500/30',
@@ -65,7 +65,7 @@ const slides = [
     discount: '25% OFF',
     rating: 4.5,
     reviews: 128,
-    image: '/images/soy-protein-isolate.jpg',
+    image: '/images/soy-protein-isolate.png',
     bgGradient: 'from-slate-950 via-neutral-900 to-emerald-950',
     accentColor: 'text-emerald-400',
     borderColor: 'border-emerald-500/30',
@@ -98,7 +98,7 @@ const slides = [
     discount: '27% OFF',
     rating: 4.7,
     reviews: 256,
-    image: '/images/performance-whey.jpg',
+    image: '/images/performance-whey.png',
     bgGradient: 'from-slate-950 via-stone-900 to-rose-950',
     accentColor: 'text-rose-400',
     borderColor: 'border-rose-500/30',
@@ -117,6 +117,39 @@ const slides = [
         y: '70%',
         title: 'Superior Mixability',
         desc: 'Instantized powder that dissolves smoothly in milk or water without any clumps.'
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: 'BIoton Whey Protein — Nutrition Profile',
+    subtitle: 'Lab-Tested & Certified Pure',
+    flavor: 'Rich Chocolate | Gold Quality',
+    weight: '4.54 Kg (10 LBS)',
+    price: '3,499',
+    oldPrice: '4,999',
+    discount: '30% OFF',
+    rating: 4.9,
+    reviews: 412,
+    image: '/images/whey-protein-gold-back.png',
+    bgGradient: 'from-slate-950 via-amber-950 to-slate-950',
+    accentColor: 'text-amber-400',
+    borderColor: 'border-amber-500/30',
+    tagColor: 'bg-amber-500/10 text-amber-400 border border-amber-500/20',
+    btnColor: 'bg-amber-500 hover:bg-amber-600 text-black',
+    features: ['Full amino acid profile disclosed', 'DigeZyme® enzyme complex', 'Zero banned substances'],
+    hotspots: [
+      {
+        x: '30%',
+        y: '45%',
+        title: 'Nutrition Facts',
+        desc: '24g protein, 130 calories per serving with complete macro breakdown for precise tracking.'
+      },
+      {
+        x: '70%',
+        y: '45%',
+        title: 'Amino Acid Profile',
+        desc: 'Full transparency — every essential, conditionally essential, and non-essential amino acid listed.'
       }
     ]
   }
