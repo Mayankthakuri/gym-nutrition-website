@@ -60,27 +60,27 @@ export default function Hero() {
           </div>
 
           <div className="hidden lg:flex justify-center items-center relative">
-            <div className="absolute w-[400px] h-[400px] bg-brand-orange/20 rounded-full blur-[80px]" />
-            <div className="relative flex gap-5 items-end">
-              <div className="bg-gradient-to-br from-amber-900/60 to-amber-950/60 rounded-3xl p-5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
-                <img src="/images/soy-protein-isolate.png" alt="BIoton Soy Protein" className="w-44 h-44 object-contain drop-shadow-2xl" />
-                <div className="mt-3 text-center">
+            <div className="absolute w-[500px] h-[500px] bg-brand-orange/15 rounded-full blur-[100px]" />
+            <div className="relative flex gap-6 items-end">
+              <div className="rounded-3xl p-4 hover:scale-105 transition-transform duration-500">
+                <img src="/images/soy-protein-isolate.png" alt="BIoton Soy Protein" className="w-[200px] h-[200px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)]" />
+                <div className="mt-4 text-center">
                   <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">SOY PROTEIN</p>
-                  <p className="text-white/60 text-xs">Rich Chocolate | 1 Kg</p>
+                  <p className="text-white/50 text-xs">Rich Chocolate | 1 Kg</p>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-yellow-900/60 to-yellow-950/60 rounded-3xl p-5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500 translate-y-[-15px]">
-                <img src="/images/whey-protein-gold.png" alt="BIoton Whey Protein" className="w-48 h-48 object-contain drop-shadow-2xl" />
-                <div className="mt-3 text-center">
+              <div className="rounded-3xl p-4 hover:scale-105 transition-transform duration-500 translate-y-[-20px]">
+                <img src="/images/whey-protein-gold.png" alt="BIoton Whey Protein" className="w-[240px] h-[240px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]" />
+                <div className="mt-4 text-center">
                   <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">WHEY PROTEIN</p>
-                  <p className="text-white/60 text-xs">Gold Quality | 4.54 Kg</p>
+                  <p className="text-white/50 text-xs">Gold Quality | 4.54 Kg</p>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-red-900/60 to-red-950/60 rounded-3xl p-5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
-                <img src="/images/performance-whey.png" alt="BIoton Performance Whey" className="w-44 h-44 object-contain drop-shadow-2xl" />
-                <div className="mt-3 text-center">
+              <div className="rounded-3xl p-4 hover:scale-105 transition-transform duration-500">
+                <img src="/images/performance-whey.png" alt="BIoton Performance Whey" className="w-[200px] h-[200px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)]" />
+                <div className="mt-4 text-center">
                   <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">PERFORMANCE</p>
-                  <p className="text-white/60 text-xs">Rich Chocolate | 4.54 Kg</p>
+                  <p className="text-white/50 text-xs">Rich Chocolate | 4.54 Kg</p>
                 </div>
               </div>
             </div>

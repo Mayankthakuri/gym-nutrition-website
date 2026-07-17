@@ -9,6 +9,7 @@ const products = [
     rating: 4.5,
     reviews: 128,
     badge: 'Plant-Based',
+    bg: 'from-amber-900/10 via-amber-800/5 to-transparent',
   },
   {
     name: 'BIoton 100% Whey Protein',
@@ -18,6 +19,7 @@ const products = [
     rating: 4.8,
     reviews: 342,
     badge: 'Best Seller',
+    bg: 'from-yellow-900/10 via-yellow-800/5 to-transparent',
   },
   {
     name: 'BIoton Performance Whey',
@@ -27,6 +29,7 @@ const products = [
     rating: 4.7,
     reviews: 256,
     badge: 'Premium',
+    bg: 'from-red-900/10 via-red-800/5 to-transparent',
   },
 ];
 
@@ -40,27 +43,29 @@ export default function Products() {
           <p className="text-gray-500 max-w-xl mx-auto">Clean and pure supplements trusted by athletes across India.</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {products.map((product, i) => (
-            <div key={i} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
-              <div className="relative bg-gray-50 p-6 flex items-center justify-center min-h-[280px]">
-                <span className="absolute top-3 left-3 bg-brand-orange text-white text-[10px] font-bold px-2.5 py-1 rounded-full">{product.badge}</span>
-                <img src={product.image} alt={product.name} className="w-48 h-48 object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500" />
+            <div key={i} className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:-translate-y-2">
+              <div className={`relative bg-gradient-to-b ${product.bg} flex items-center justify-center min-h-[340px] p-4 overflow-hidden`}>
+                <span className="absolute top-4 left-4 z-10 bg-brand-orange text-white text-[10px] font-bold px-3 py-1.5 rounded-full shadow-lg">{product.badge}</span>
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-[260px] h-[260px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.3)] group-hover:scale-110 group-hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.4)] transition-all duration-700 ease-out"
+                />
               </div>
-              <div className="p-5">
-                <div className="flex items-center gap-1 mb-2">
+              <div className="p-6">
+                <div className="flex items-center gap-1 mb-3">
                   {[...Array(5)].map((_, j) => (
-                    <Star key={j} size={11} className={j < Math.floor(product.rating) ? 'text-brand-yellow fill-brand-yellow' : 'text-gray-300'} />
+                    <Star key={j} size={13} className={j < Math.floor(product.rating) ? 'text-brand-yellow fill-brand-yellow' : 'text-gray-300'} />
                   ))}
-                  <span className="text-[11px] text-gray-400 ml-1">{product.rating} ({product.reviews})</span>
+                  <span className="text-xs text-gray-400 ml-1">{product.rating} ({product.reviews})</span>
                 </div>
-                <h3 className="text-sm font-bold text-gray-900 mb-1">{product.name}</h3>
-                <p className="text-xs text-gray-400 mb-3">{product.flavor} | {product.weight}</p>
-                <div className="mt-auto">
-                  <button className="w-full flex items-center justify-center gap-2 bg-brand-black text-white py-3 rounded-full text-xs font-semibold hover:bg-brand-orange transition-all">
-                    <ShoppingCart size={14} />Enquire Now
-                  </button>
-                </div>
+                <h3 className="text-base font-bold text-gray-900 mb-1">{product.name}</h3>
+                <p className="text-sm text-gray-400 mb-4">{product.flavor} | {product.weight}</p>
+                <button className="w-full flex items-center justify-center gap-2 bg-brand-black text-white py-3.5 rounded-full text-sm font-semibold hover:bg-brand-orange transition-all duration-300 shadow-md hover:shadow-lg">
+                  <ShoppingCart size={16} />Enquire Now
+                </button>
               </div>
             </div>
           ))}

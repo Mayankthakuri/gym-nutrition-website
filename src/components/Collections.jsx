@@ -43,11 +43,15 @@ export default function Collections() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {collections.map((col, i) => (
-            <a key={i} href={col.link} className={`group relative bg-gradient-to-br ${col.bg} rounded-2xl overflow-hidden aspect-[4/5] flex flex-col justify-end p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}>
-              <span className="absolute top-4 left-4 bg-brand-yellow text-brand-black text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">{col.tag}</span>
-              <img src={col.image} alt={col.title} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500" />
+            <a key={i} href={col.link} className={`group relative bg-gradient-to-br ${col.bg} rounded-3xl overflow-hidden aspect-[4/5] flex flex-col justify-end p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2`}>
+              <span className="absolute top-5 left-5 bg-brand-yellow text-brand-black text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider z-10">{col.tag}</span>
+              <img
+                src={col.image}
+                alt={col.title}
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[240px] h-[240px] object-contain opacity-70 group-hover:opacity-100 group-hover:scale-110 group-hover:-translate-y-[45%] transition-all duration-700 ease-out drop-shadow-[0_20px_40px_rgba(0,0,0,0.4)]"
+              />
               <div className="relative z-10">
-                <h3 className="text-white text-xl font-bold mb-1">{col.title}</h3>
+                <h3 className="text-white text-2xl font-bold mb-1">{col.title}</h3>
                 <p className="text-white/60 text-sm">{col.description}</p>
               </div>
             </a>
