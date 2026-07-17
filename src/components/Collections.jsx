@@ -2,28 +2,28 @@ import { ArrowRight } from 'lucide-react';
 
 const collections = [
   {
+    title: 'Soy Protein',
+    description: 'Plant-based isolate for vegetarians',
+    image: '/images/soy-protein.svg',
+    bg: 'from-amber-900 to-amber-950',
+    link: '#products',
+    tag: 'Veg',
+  },
+  {
     title: 'Whey Protein',
-    description: 'High-performance whey for muscle gain',
-    image: '/images/performance-whey.svg',
-    bg: 'from-red-900 to-red-950',
+    description: 'Gold quality with digestive enzymes',
+    image: '/images/whey-protein-gold.svg',
+    bg: 'from-yellow-900 to-yellow-950',
     link: '#products',
     tag: 'Best Seller',
   },
   {
-    title: 'Plant Protein',
-    description: 'Pure soy protein isolate for vegetarians',
-    image: '/images/soy-protein.svg',
-    bg: 'from-amber-900 to-amber-950',
+    title: 'Performance Whey',
+    description: 'Premium whey for serious athletes',
+    image: '/images/performance-whey.svg',
+    bg: 'from-red-900 to-red-950',
     link: '#products',
-    tag: 'New',
-  },
-  {
-    title: 'Pre Workout',
-    description: 'Energy boost before intense training',
-    image: '/images/soy-protein.svg',
-    bg: 'from-blue-900 to-blue-950',
-    link: '#products',
-    tag: 'Popular',
+    tag: 'Premium',
   },
 ];
 
@@ -56,7 +56,7 @@ export default function Collections() {
               <img
                 src={col.image}
                 alt={col.title}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-auto opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-36 h-auto opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
               />
               <div className="relative z-10">
                 <h3 className="text-white text-xl font-bold mb-1">{col.title}</h3>

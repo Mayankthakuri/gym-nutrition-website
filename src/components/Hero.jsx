@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-yellow/10 rounded-full blur-[100px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-8 items-center min-h-[600px] lg:min-h-[700px] py-12">
+        <div className="grid lg:grid-cols-2 gap-8 items-center min-h-[550px] lg:min-h-[650px] py-12">
           <div className="text-white">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-6 border border-white/10">
               <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
@@ -46,15 +46,15 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {badges.map((badge, i) => {
                 const Icon = badge.icon;
                 return (
-                  <div key={i} className="flex items-center gap-3 bg-white/5 rounded-xl px-3 py-3 border border-white/5">
-                    <Icon size={18} className="text-brand-yellow flex-shrink-0" />
+                  <div key={i} className="flex items-center gap-2 bg-white/5 rounded-xl px-3 py-2.5 border border-white/5">
+                    <Icon size={16} className="text-brand-yellow flex-shrink-0" />
                     <div>
-                      <div className="text-xs font-semibold text-white">{badge.label}</div>
-                      <div className="text-[10px] text-gray-500">{badge.sub}</div>
+                      <div className="text-[11px] font-semibold text-white">{badge.label}</div>
+                      <div className="text-[9px] text-gray-500">{badge.sub}</div>
                     </div>
                   </div>
                 );
@@ -64,18 +64,25 @@ export default function Hero() {
 
           <div className="hidden lg:flex justify-center items-center relative">
             <div className="absolute w-[400px] h-[400px] bg-brand-orange/20 rounded-full blur-[80px]" />
-            <div className="relative flex gap-6 items-end">
-              <div className="bg-gradient-to-br from-amber-900/80 to-amber-950/80 rounded-3xl p-6 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
-                <img src="/images/soy-protein.svg" alt="BIoton Soy Protein Isolate" className="w-48 h-auto drop-shadow-2xl" />
-                <div className="mt-4 text-center">
-                  <p className="text-brand-yellow text-xs font-semibold">SOY PROTEIN</p>
+            <div className="relative flex gap-5 items-end">
+              <div className="bg-gradient-to-br from-amber-900/60 to-amber-950/60 rounded-3xl p-5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
+                <img src="/images/soy-protein.svg" alt="BIoton Soy Protein" className="w-40 h-auto drop-shadow-2xl" />
+                <div className="mt-3 text-center">
+                  <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">SOY PROTEIN</p>
                   <p className="text-white text-sm font-bold">Rs. 1,499</p>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-red-900/80 to-red-950/80 rounded-3xl p-6 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500 translate-y-[-20px]">
-                <img src="/images/performance-whey.svg" alt="BIoton Performance Whey" className="w-52 h-auto drop-shadow-2xl" />
-                <div className="mt-4 text-center">
-                  <p className="text-brand-yellow text-xs font-semibold">PERFORMANCE WHEY</p>
+              <div className="bg-gradient-to-br from-yellow-900/60 to-yellow-950/60 rounded-3xl p-5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500 translate-y-[-15px]">
+                <img src="/images/whey-protein-gold.svg" alt="BIoton Whey Protein" className="w-44 h-auto drop-shadow-2xl" />
+                <div className="mt-3 text-center">
+                  <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">WHEY PROTEIN</p>
+                  <p className="text-white text-sm font-bold">Rs. 3,499</p>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-red-900/60 to-red-950/60 rounded-3xl p-5 border border-white/10 backdrop-blur-sm hover:scale-105 transition-transform duration-500">
+                <img src="/images/performance-whey.svg" alt="BIoton Performance Whey" className="w-40 h-auto drop-shadow-2xl" />
+                <div className="mt-3 text-center">
+                  <p className="text-brand-yellow text-[10px] font-semibold tracking-wider">PERFORMANCE</p>
                   <p className="text-white text-sm font-bold">Rs. 3,999</p>
                 </div>
               </div>

@@ -1,42 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520">
   <defs>
-    <linearGradient id="jar1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#2a2a2a"/>
-      <stop offset="100%" stop-color="#1a1a1a"/>
+    <linearGradient id="jarBody1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="30%" stop-color="#2d2d2d"/>
+      <stop offset="70%" stop-color="#2d2d2d"/>
+      <stop offset="100%" stop-color="#111"/>
     </linearGradient>
-    <linearGradient id="label1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#8B5E3C"/>
-      <stop offset="50%" stop-color="#6B3F22"/>
-      <stop offset="100%" stop-color="#4A2A15"/>
+    <linearGradient id="labelBg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9B6B3C"/>
+      <stop offset="30%" stop-color="#7A4F28"/>
+      <stop offset="70%" stop-color="#5C3A1A"/>
+      <stop offset="100%" stop-color="#3E2510"/>
+    </linearGradient>
+    <linearGradient id="gold1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F0D060"/>
+      <stop offset="50%" stop-color="#D4A54A"/>
+      <stop offset="100%" stop-color="#B8922E"/>
     </linearGradient>
   </defs>
-  <!-- Jar body -->
-  <rect x="80" y="100" width="240" height="350" rx="20" fill="url(#jar1)"/>
+
+  <!-- Jar Body -->
+  <path d="M100,130 Q100,120 110,115 L290,115 Q300,120 300,130 L310,440 Q310,470 280,475 L120,475 Q90,470 90,440 Z" fill="url(#jarBody1)"/>
+  
+  <!-- Jar Shine -->
+  <path d="M115,130 L115,440 Q115,460 130,465 L135,465 L135,130 Z" fill="rgba(255,255,255,0.04)"/>
+  
   <!-- Lid -->
-  <rect x="70" y="60" width="260" height="50" rx="8" fill="#111"/>
-  <rect x="70" y="55" width="260" height="15" rx="6" fill="#333"/>
-  <!-- Label -->
-  <rect x="85" y="160" width="230" height="260" rx="5" fill="url(#label1)"/>
-  <!-- Label gold border -->
-  <rect x="90" y="165" width="220" height="250" rx="3" fill="none" stroke="#D4A54A" stroke-width="2"/>
-  <!-- Logo B -->
-  <circle cx="200" cy="210" r="30" fill="#D4A54A"/>
-  <text x="200" y="222" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="32" fill="#1a1a1a">B</text>
-  <!-- Brand name -->
-  <text x="200" y="265" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="22" fill="#D4A54A">Bioton</text>
-  <!-- Product type -->
-  <rect x="120" y="280" width="160" height="24" rx="12" fill="#D4A54A"/>
-  <text x="200" y="297" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="11" fill="#1a1a1a">RICH CHOCOLATE</text>
-  <!-- Main text -->
-  <text x="200" y="335" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="20" fill="#fff">100%</text>
-  <text x="200" y="358" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="14" fill="#D4A54A">SOY PROTEIN</text>
-  <text x="200" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="16" fill="#fff">ISOLATE</text>
-  <!-- Weight -->
-  <text x="200" y="410" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#ccc">Net weight 1 Kg</text>
-  <!-- Green dot -->
-  <circle cx="310" cy="175" r="6" fill="#138808"/>
-  <!-- Scratch card -->
-  <rect x="92" y="170" width="55" height="28" rx="3" fill="#D4A54A"/>
-  <text x="120" y="182" text-anchor="middle" font-family="Arial,sans-serif" font-size="6" font-weight="bold" fill="#1a1a1a">SCRATCH</text>
-  <text x="120" y="192" text-anchor="middle" font-family="Arial,sans-serif" font-size="6" font-weight="bold" fill="#1a1a1a">CARD INSIDE</text>
+  <rect x="80" y="60" width="240" height="55" rx="10" fill="#111"/>
+  <rect x="75" y="50" width="250" height="18" rx="8" fill="#222"/>
+  <rect x="75" y="45" width="250" height="10" rx="5" fill="#333"/>
+  <path d="M80,60 L320,60 L320,65 L80,65 Z" fill="rgba(255,255,255,0.05)"/>
+  
+  <!-- Label Background -->
+  <rect x="95" y="160" width="210" height="290" rx="4" fill="url(#labelBg1)"/>
+  
+  <!-- Label Gold Border -->
+  <rect x="100" y="165" width="200" height="280" rx="3" fill="none" stroke="url(#gold1)" stroke-width="1.5"/>
+  
+  <!-- Inner gold frame -->
+  <rect x="108" y="173" width="184" height="264" rx="2" fill="none" stroke="url(#gold1)" stroke-width="0.5" opacity="0.5"/>
+  
+  <!-- Logo Circle -->
+  <circle cx="200" cy="215" r="28" fill="url(#gold1)"/>
+  <circle cx="200" cy="215" r="25" fill="#3E2510"/>
+  <text x="200" y="225" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="28" fill="url(#gold1)">B</text>
+  
+  <!-- Registered Trademark -->
+  <text x="228" y="200" font-family="Arial" font-size="8" fill="url(#gold1)">®</text>
+  
+  <!-- Brand Name -->
+  <text x="200" y="262" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="18" fill="url(#gold1)">Bioton</text>
+  
+  <!-- Flavor Banner -->
+  <rect x="120" y="275" width="160" height="22" rx="11" fill="url(#gold1)"/>
+  <text x="200" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="10" fill="#3E2510" letter-spacing="1">RICH CHOCOLATE</text>
+  
+  <!-- 100% text -->
+  <text x="200" y="328" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="38" fill="#fff" letter-spacing="-1">100%</text>
+  
+  <!-- SOY PROTEIN -->
+  <text x="200" y="355" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="16" fill="url(#gold1)" letter-spacing="2">SOY PROTEIN</text>
+  
+  <!-- ISOLATE -->
+  <text x="200" y="380" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="20" fill="#fff" letter-spacing="3">ISOLATE</text>
+  
+  <!-- Net Weight -->
+  <text x="200" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#aaa">Net weight 1 Kg</text>
+  
+  <!-- Green Veg Dot -->
+  <rect x="305" y="170" width="16" height="16" rx="2" fill="#fff"/>
+  <circle cx="313" cy="178" r="5" fill="#138808"/>
+  
+  <!-- Scratch Card Badge -->
+  <rect x="102" y="175" width="48" height="24" rx="3" fill="url(#gold1)"/>
+  <text x="126" y="185" text-anchor="middle" font-family="Arial" font-size="6" font-weight="bold" fill="#3E2510">SCRATCH</text>
+  <text x="126" y="194" text-anchor="middle" font-family="Arial" font-size="6" font-weight="bold" fill="#3E2510">CARD INSIDE!!!</text>
+  
+  <!-- Bottom Jar Line -->
+  <ellipse cx="200" cy="475" rx="95" ry="8" fill="#1a1a1a"/>
 </svg>
